@@ -1,0 +1,40 @@
+{
+  "name": "qrscanner",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "adalo": {
+    "logo": "./example-logo.png",
+    "displayName": "QRScanner",
+    "components": [
+      {
+        "name": "QRScanner",
+        "manifest": "./src/components/QRScanner/manifest.json"
+      }
+    ],
+    "iosInstallScript": "./scripts/install_ios.sh",
+    "androidInstallScript": "./scripts/install_android.sh"
+  },
+  "devDependencies": {
+    "@adalo/cli": "^0.0.40",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-flow": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "metro-react-native-babel-preset": "^0.63.0",
+    "react": "^16.9.0",
+    "react-art": "^16.6.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.9.5"
+  },
+  "dependencies": {
+    "react-native-camera": "^3.40.0",
+    "react-native-qrcode-scanner": "^1.4.1"
+  }
+}

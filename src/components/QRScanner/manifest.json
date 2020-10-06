@@ -1,0 +1,21 @@
+{
+  "displayName": "QRScanner",
+  "defaultWidth": 320,
+  "defaultHeight": 600,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "message",
+      "displayName": "Top Message",
+      "type": "text",
+      "default": "Open Wikipedia"
+    },
+    {
+      "name": "link",
+      "displayName": "Address to scan",
+      "type": "text",
+      "default": "https://es.wikipedia.org/"
+    }
+  ]
+}
